@@ -1,3 +1,2 @@
 # repositorio
-
-../Ejercicio1.html/divs.html
+[Ejercicio 2: Liatas y multimedia](/Ejercicio1.html/divs.html)
