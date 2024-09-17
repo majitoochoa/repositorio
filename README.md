@@ -3,6 +3,9 @@
 
 -[Ejercicio 3](Ejercicio3/ejercicio.html)
 
--[Listas](/listas/index.html)
+-[Listas](/HTML/index.html)
 
 -[CSS](/CSS/ejercicio1.html)
+
+-[TARJETA](/Tarjeta/tarjeta.html)
+
