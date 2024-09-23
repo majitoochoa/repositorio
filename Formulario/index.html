@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Formulario de inscripción para primaria Gregorio Torres Quintero">
+    <meta name="author" content="Maria Jose">
+    <meta name="keywords" content="primaria, escuela, inscripción">
+    <title>Inscripción Primaria Gregorio Torres Quintero</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #632828;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #091A4A;
+        }
+
+        form {
+            width: 70%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border: 4px solid #001E57;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #C0C0C0;
+        }
+
+        fieldset {
+            border: 2px solid #001E57;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #632828;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #666A74;
+        }
+
+        input[type="text"], input[type="number"], input[type="tel"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #C0C0C0;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus, input[type="number"]:focus, input[type="tel"]:focus, select:focus, textarea:focus {
+            border-color: #632828;
+            box-shadow: 0 0 8px #001E57;
+        }
+
+        button {
+            background-color: #091A4A;
+            color: #FFFFFF;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #C0C0C0;
+        }
+
+        button:active {
+            background-color: #091A4A;
+            transform: scale(0.98);
+        }
+
+        label[for]:before {
+            content: "* ";
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Inscripción</h1>
+
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Datos del Estudiante</legend>
+
+            <label for="nombre">Nombre completo del estudiante:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe el nombre completo." required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="5" max="12" required>
+
+            <label for="grado">Grado al que se inscribe:</label>
+            <select name="grado" id="grado" required>
+                <option value="1">1° Grado</option>
+                <option value="2">2° Grado</option>
+                <option value="3">3° Grado</option>
+                <option value="4">4° Grado</option>
+                <option value="5">5° Grado</option>
+                <option value="6">6° Grado</option>
+            </select>
+
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="sexo" value="femenino" required>
+            <label for="femenino">Femenino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de Madre/Padre o Tutor</legend>
+
+            <label for="tutor">Nombre completo de Madre/Padre o Tutor:</label>
+            <input type="text" id="tutor" name="tutor" placeholder="Escribe el nombre completo de Madre/Padre o Tutor" required>
+
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Escribe el número de contacto" required>
+
+            <label for="Emergencia">Contacto de Emergencia:</label>
+            <input type="text" id="Emergencia" name="Emergencia" placeholder="Escribe el nombre completo de Contacto de Emergencia" required>
+
+            <label for="TelefonoEmer">Telefono de emergencia:</label>
+            <input type="Tel" id="TelefonoEmer" name="TelefonoEmer" placeholder="Escribe el número de emergencia" required>
+    
+        </fieldset>
+
+        <button type="submit">Enviar Inscripción</button>
+    </form>
+</body>
+</html>
