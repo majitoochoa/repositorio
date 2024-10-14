@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago de Inscripción</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pago de Inscripción</h1>
+        <form action="/procesar-pago" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre del Estudiante:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="monto">Monto de Inscripción:</label>
+                <input type="number" id="monto" name="monto" class="form-control" value="1500" readonly>
+            </div>
+            <button type="submit" class="btn btn-primary">Pagar</button>
+        </form>
+    </div>
+</body>
+</html>

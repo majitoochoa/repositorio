@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Pago del Seguro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Pago del Seguro</h1>
+        <form action="/procesar-pago-seguro" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre del Estudiante:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre del estudiante" required>
+            </div>
+
+            <div class="form-group">
+                <label for="monto-seguro">Monto del Seguro:</label>
+                <input type="number" id="monto-seguro" name="monto-seguro" class="form-control" value="80" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="metodo">Método de Pago:</label>
+                <select id="metodo" name="metodo" class="form-control" required>
+                    <option value="">Seleccione...</option>
+                    <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                    <option value="transferencia">Transferencia Bancaria</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </div>
+
+            <div class="form-group mt-3">
+                <button type="submit" class="btn btn-primary">Pagar Seguro</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
