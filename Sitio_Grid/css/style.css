@@ -146,7 +146,6 @@ li:hover .submenu {
     max-width: 100%; 
 }
 
-/* NUEVO: Contenedor de las tarjetas usando CSS Grid */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
