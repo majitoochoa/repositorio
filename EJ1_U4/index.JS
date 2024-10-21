@@ -14,7 +14,7 @@ function division(numero1, numero2) {
     if (numero2 !== 0) {
         return numero1 / numero2;
     } else {
-        return "Syntax Error";
+        return "Error";
     }
 }
 let resultado;
