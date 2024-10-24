@@ -1,23 +1,29 @@
-let numero1 = parseFloat(prompt("Ingrese el primer número"));
-let numero2 = parseFloat(prompt("Ingrese el segundo número"));
-let operacion = prompt("Ingrese la operacion (+, -, *, /)");
-function sumar(numero1, numero2) {
-    return numero1 + numero2;
+let numero1 = parseFloat(prompt("Ingresa el primer numero o cifra:"));
+let numero2 = parseFloat(prompt("Ingresa el segundo numero o cifra:"));
+let operacion = prompt("Ingrese la operacion que necesita realizar(+, -, *, /):");
+
+function sumar(a, b) {
+    return a + b;
 }
-function restar(numero1, numero2) {
-    return numero1 - numero2;
+
+function restar(a, b) {
+    return a - b;
 }
-function multiplicacion(numero1, numero2) {
-    return numero1 * numero2;
+
+function multiplicar(a, b) {
+    return a * b;
 }
-function division(numero1, numero2) {
-    if (numero2 !== 0) {
-        return numero1 / numero2;
+
+function dividir(a, b) {
+    if (b !== 0) {
+        return a / b;
     } else {
-        return "Error";
+        return "Error: División por cero";
     }
 }
+
 let resultado;
+
 switch (operacion) {
     case "+":
         resultado = sumar(numero1, numero2);
@@ -26,10 +32,13 @@ switch (operacion) {
         resultado = restar(numero1, numero2);
         break;
     case "*":
-        resultado = multiplicacion(numero1, numero2);
+        resultado = multiplicar(numero1, numero2);
         break;
     case "/":
-        resultado = division(numero1, numero2);
+        resultado = dividir(numero1, numero2);
         break;
+    default:
+        resultado = "Operación no válida";
 }
-console.log(resultado);
+
+console.log(`Resultado: ${resultado}`);
