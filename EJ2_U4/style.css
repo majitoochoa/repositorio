@@ -1,0 +1,43 @@
+.flex-container {
+    display: flex;
+    background-color: grey;
+
+}
+
+.flex-item {
+    background-color: rgba(255, 255, 255, 0.616);
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 35px;
+    border-radius: 10px;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+
+}
+
+.botones-rosa {
+    background-color: rgb(231, 72, 183);
+    color: white;
+}
+
+.botones-azul {
+    background-color: rgb(48, 189, 196);
+    color: white;
+}
+
+.botones-rojol {
+    background-color: rgb(255, 0, 85);
+    color: white;
+}
+
+.botones-reset {
+    background-color: gray;
+    color: white;
+    width: 90%;
+
+}
