@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.custom-card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.custom-header {
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.input-tarea {
+    border-radius: 15px;
+    height: 45px;
+}
+
+.btn-add-task {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0.5rem;
+    border-radius: 12px;
+    background-color: #f0f4f8;
+    font-size: 1.1rem;
+}
+
+.list-group-item .form-check-label {
+    flex: 1;
+    margin-left: 0.5rem;
+}
+
+.list-group-item .btn {
+    margin-left: 1rem;
+}
+
+.text-decoration-line-through {
+    text-decoration: line-through;
+    color: #6c757d;
+}
